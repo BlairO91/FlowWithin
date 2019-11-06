@@ -1,0 +1,975 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #fff;
+  background-color: #ddd;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.wrapper {
+  display: none;
+  height: 100%;
+}
+
+#aboutSection, #trainerSection, #kinstretchSection, #contactSection {
+  padding-top: 2%;
+}
+
+/* Nav Bar */
+.navBar {
+  position: fixed;
+  display: block;
+  height: 10%;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.navBar:hover {
+  opacity: 1;
+}
+
+.navBar ul {
+  list-style-type: none;
+  position: absolute;
+  right: 2%;
+}
+
+.navBar ul li {
+  display: inline;
+  padding: 10px;
+}
+
+.navBar ul li:hover {
+  border-bottom: 2px solid #2549FF;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #111;
+}
+
+.smallLogo {
+  position: absolute;
+  height: 100%;
+  left: 4%;
+}
+
+/* SECTIONS */
+.logoContainer {
+  position: absolute;
+  top: 28.5%;
+  left: 37.5%;
+  height: 50%;
+  pointer-events: none;
+}
+
+.largeLogo {
+  height: 100%;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pimg, .pimg2, .pimg3, .pimg4, .pimg5 {
+  background-attachment: fixed;
+  background-size: 102%;
+  width: 100%;
+}
+
+.pimg1 {
+  display: none;
+  background-image: url('../pics/yoga_53 2.jpg');
+  background-size: 118%;
+  background-position: 26% 73%;
+  min-height: 113%;
+  filter: brightness(95%);
+}
+
+.pimg2 {
+  background-image: url('../pics/danaclass.png');
+  background-position: 0 85%;
+  height: 70%;
+  filter: contrast(95%) brightness(105%);
+}
+
+.pimg3 {
+  background-image: url('../pics/stretchcoaching.jpeg');
+  background-position: 0 45%;
+  height: 70%;
+}
+
+.pimg4 {
+  background-image: url('../pics/yoga_222.jpg');
+  background-position: 50% 35%;
+  background-size: 100%;
+  height: 70%;
+}
+
+.pimg5 {
+  background-image: url('../pics/yoga_136.jpg');
+  background-size: 100%;
+  background-position: 50% 40%;
+  height: 70%;
+}
+
+.section {
+  background-color: #101010;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  padding: 10% 10%;
+}
+
+.section h2 {
+  font-family: 'Fjalla', sans-serif;
+  font-size: 3.5em;
+  letter-spacing: 3px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 6%;
+  line-height: 100%;
+}
+
+.section h3 {
+  font-family: 'Fjalla', sans-serif;
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+
+.section h4 {
+  font-family: 'Fjalla', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+/* FLOW WITHIN ABOUT SECTION */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.aboutGrid-a {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.vectorIcons {
+  display: block;
+  width: 55px;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+
+.vectorList {
+  display: flex;
+  margin-left: -11%;
+  width: 120%;
+}
+
+.vectorList>div {
+  width: 20%;
+  margin: 4% 0 2% 0;
+}
+
+.aboutGrid-b {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  margin-top: 30%;
+  margin-right: 10%;
+}
+
+.aboutGrid-c {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  margin-top: 30%;
+  margin-left: 10%;
+}
+
+.aboutGridImage-c, .aboutGridImage-b {
+  display: flex;
+  align-items: center;
+}
+
+.aboutGridImage-b>img {
+  grid-column: 3;
+  grid-row: 2;
+  width: 100%;
+  max-height: 100%;
+  margin-top: 45%;
+}
+
+.aboutGridImage-c>img {
+  grid-column: 1;
+  grid-row: 3;
+  width: 100%;
+  max-height: 100%;
+  margin-top: 45%;
+}
+
+.emailContainerHorizontal {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  border-top: 1px dotted #696969;
+  color: #fff;
+  width: 100%;
+  margin-top: 15%;
+  padding-top: 7%;
+  flex-wrap: wrap;
+}
+
+.emailContainerHorizontal h3 {
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.emailContainerHeader {
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.leftEmailContainer, .rightEmailContainer {
+  width: 50%;
+  padding: 3% 1% 5% 1%;
+}
+
+.rightEmailContainer {
+  padding: 3% 0 5% 4%;
+}
+
+.torontoLocals {
+  font-family: 'Fjalla', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin-top: 2%;
+  padding-bottom: 3%;
+}
+
+.horizontalForm input {
+  font-size: 0.9rem;
+  display: block;
+  background-color: #000;
+  border: none;
+  border-bottom: 1px solid #e4e4e4;
+  margin: 1% auto;
+  padding: 2%;
+  width: 100%;
+  box-shadow: none;
+}
+
+.worldTextContainer {
+  position: relative;
+  top: -15%;
+  margin: 0 auto;
+  width: 75%;
+  height: auto;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background-color: #fff;
+  color: #000;
+  border-top: 2px solid #2A4AEB;
+}
+
+.worldText {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+
+/* WHO ARE WE SECTION */
+.trainerFlex {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-top: 6%;
+  width: 100%;
+}
+
+.moreInfoBio {
+  padding-top: 5%;
+  text-align: justify;
+  text-indent: 2em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.danaBio {
+  position: relative;
+  background-color: #000;
+  height: 100%;
+  width: 50%;
+  left: -4%;
+}
+
+.bioPicDana {
+  width: 100%;
+}
+
+.bioPic {
+  width: 70%;
+  height: 40%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.bioPicDana, .bioPicKristina {
+  object-fit: cover;
+}
+
+.danaBio p, .kristinaBio p {
+  font-size: 1rem;
+}
+
+.kristinaBio {
+  background-color: #000;
+  position: relative;
+  background-color: #000;
+  width: 50%;
+  right: -4%;
+}
+
+.bioButton {
+  text-decoration: underline #2A4AEB;
+  text-underline-position: under;
+}
+
+.bioUnderline {
+  border-bottom: 2px solid #2A4AEB;
+}
+
+/* Services SECTION */
+.servicesGrid-a {
+  display: flex;
+}
+
+.coachingGrid-a, .coachingGrid-b {
+  width: 50%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.coachingGrid-a {
+  padding-right: 4%;
+  text-align: justify;
+}
+
+.coachingGrid-a {
+  padding-left: 2%;
+}
+
+.coachingBenefits {
+  text-align: left;
+  padding-left: 7%;
+}
+
+.coachingBenefits ul li {
+  list-style-type: none;
+  padding-bottom: 4%;
+}
+
+ul:first-child li:before {
+  color: #2549FF;
+  font-size: 1.3em;
+  padding-right: 2%;
+  content: "\2713\0020";
+}
+
+.servicesGrid-c {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.servicesGrid-c span {
+  color: #2A4AEB;
+  font-size: 1.5em;
+  line-height: 1.7;
+  padding-left: .5%;
+  padding-right: .5%;
+}
+
+.servicesGrid-kinstretch {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-top: 10%;
+}
+
+.kinstretchVideo {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56%;
+  height: 0;
+}
+
+.kinstretchVideo iframe {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.kinstretchInfo {
+  margin: 7% auto;
+  margin-bottom: -3%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.servicesHeader {
+  padding-bottom: 4%;
+}
+
+.servicesGrid-offers {
+  display: flex;
+  margin: 5% 0 7% 0;
+}
+
+.servicesGrid-d {
+  padding: 2% 8% 2% 2%;
+}
+
+.servicesGrid-e {
+  padding: 2% 0%;
+}
+
+.servicesSmallText {
+  font-size: 0.85em;
+}
+
+.locationIcon {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 3px;
+  margin-left: -2px;
+}
+
+.servicesGrid-f {
+  margin-top: -7%;
+}
+
+.kinstretchGallery {
+  padding-top: 2%;
+}
+
+/* TESTIMONIALS SECTIONS */
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, auto);
+}
+
+.testimonialGrid-a {
+  grid-columns: 1;
+  grid-row: 1;
+  position: relative;
+  max-width: 150px;
+  max-height: 175px;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.testimonialProfile-a {
+  width: 100%;
+  height: auto;
+  border-top: 2px solid #2549FF;
+}
+
+.testimonialGrid-b {
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  padding-bottom: 5%;
+}
+
+.testimonialGrid-c {
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+  max-width: 150px;
+  max-height: 175px;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.testimonialProfile-c {
+  position: absolute;
+  left: -60px;
+  width: 180%;
+  height: auto;
+  border-top: 2px solid #2549FF;
+}
+
+.testimonialGrid-d {
+  grid-column: 2 / span 3;
+  grid-row: 2;
+  padding-bottom: 5%;
+}
+
+.testimonialGrid-e {
+  grid-column: 1;
+  grid-row: 3;
+  position: relative;
+  max-width: 150px;
+  max-height: 175px;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.testimonialProfile-e {
+  width: 100%;
+  height: auto;
+  border-top: 2px solid #2549FF;
+}
+
+.testimonialGrid-f {
+  grid-column: 2 / span 3;
+  grid-row: 3;
+  padding-bottom: 5%;
+}
+
+.testimonialGrid-g {
+  grid-column: 1;
+  grid-row: 4;
+  position: relative;
+  max-width: 150px;
+  max-height: 175px;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.testimonialProfile-g {
+  position: absolute;
+  top: -20px;
+  left: -148px;
+  width: 300%;
+  height: auto;
+  border-top: 2px solid #2549FF;
+}
+
+.testimonialGrid-h {
+  grid-column: 2 / span 3;
+  grid-row: 4;
+  padding-bottom: 5%;
+}
+
+.testimonialGrid-i {
+  grid-column: 1;
+  grid-row: 5;
+  position: relative;
+  max-width: 150px;
+  max-height: 175px;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.testimonialProfile-i {
+  width: 100%;
+  height: auto;
+  border-top: 2px solid #2549FF;
+}
+
+.testimonialGrid-j {
+  grid-column: 2 / span 3;
+  grid-row: 5;
+  padding-bottom: 5%;
+}
+
+.testimonialGrid-k {
+  grid-column: 1;
+  grid-row: 6;
+  position: relative;
+  max-width: 150px;
+  max-height: 175px;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.testimonialProfile-k {
+  width: 100%;
+  height: auto;
+  border-top: 2px solid #2549FF;
+}
+
+.testimonialGrid-l {
+  grid-column: 2 / span 3;
+  grid-row: 6;
+  padding-bottom: 5%;
+}
+
+.testimonialGrid-m {
+  grid-column: 1;
+  grid-row: 7;
+  position: relative;
+  max-width: 150px;
+  max-height: 175px;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.testimonialProfile-m {
+  position: absolute;
+  top: -20px;
+  left: -148px;
+  width: 300%;
+  height: auto;
+  border-top: 2px solid #2549FF;
+}
+
+.testimonialGrid-n {
+  grid-column: 2 / span 3;
+  grid-row: 7;
+  padding-bottom: 5%;
+}
+
+.testimonialGrid-o {
+  grid-column: 1;
+  grid-row: 8;
+  position: relative;
+  max-width: 150px;
+  max-height: 175px;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.testimonialProfile-o {
+  width: 100%;
+  height: auto;
+  border-top: 2px solid #2549FF;
+}
+
+.testimonialGrid-p {
+  grid-column: 2 / span 3;
+  grid-row: 8;
+  padding-bottom: 5%;
+}
+
+.testimonialGrid-q {
+  grid-column: 1;
+  grid-row: 9;
+  position: relative;
+  max-width: 150px;
+  max-height: 175px;
+  overflow: hidden;
+}
+
+.testimonialProfile-q {
+  width: 100%;
+  height: auto;
+  border-top: 2px solid #2549FF;
+}
+
+.testimonialGrid-r {
+  grid-column: 2 / span 3;
+  grid-row: 9;
+}
+
+.readMoreButton, .readLessButton {
+  text-decoration: underline #2A4AEB;
+  text-underline-position: under;
+}
+
+/* CONTACT SECTION */
+.contactSection {
+  flex-direction: column;
+  background-color: #fefefe;
+  color: #000;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.emailContainer {
+  margin: 0 auto;
+  padding-bottom: 4%;
+  width: 40%;
+}
+
+.contactForm input {
+  font-size: 0.9rem;
+  display: block;
+  margin: 2% auto;
+  padding: 3%;
+  min-width: 70%;
+  box-shadow: none;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #2A4AEB;
+}
+
+.submitButton {
+  font-size: 0.9rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  margin-top: 2%;
+  padding: 3% 15%;
+}
+
+.submitButtonHorizontal {
+  background-color: #000;
+  width: 40%;
+  color: #fff;
+  border: 1px solid #2A4AEB;
+  margin-top: 4%;
+  margin-left: 1%;
+  padding: 1.2% 5%;
+}
+
+.submitButton:focus, .submitButtonHorizontal:focus {
+  outline: none;
+}
+
+.submitButton:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.submitButtonHorizontal:hover {
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+/* FOOTER SECTION */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #bbb;
+  width: 100%;
+}
+
+.footer p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contactLogo {
+  width: 8%;
+  margin: 0 auto;
+  padding-top: 1%;
+}
+
+.footer span {
+  font-weight: bold;
+}
+
+.instagramFeed {
+  position: relative;
+  margin-bottom: -2%;
+  text-align: left;
+  left: 2.3%;
+}
+
+.instagramGallery {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 2% auto;
+}
+
+.flowWithinImg {
+  width: 30%;
+  height: 30%;
+  padding: 0.5%;
+}
+
+@media(max-width: 768px) {
+  .logoContainer {
+    left: 28%;
+  }
+
+  .trainerFlex {
+    display: flex;
+  }
+
+  .danaBio {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  .danaBioImg {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    padding-bottom: 5%;
+  }
+
+  .kristinaBio {
+    left: 2%;
+    width: 100%;
+    padding-bottom: 5%
+  }
+
+  .kristinaBioImg {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    padding-bottom: 8%;
+  }
+
+  .svgLine2 {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+  }
+
+  .svgLine4 {
+    position: absolute;
+    top: -5%;
+    right: 7%;
+  }
+
+  .svgLine6 {
+    position: absolute;
+    top: -8%;
+    left: 7%;
+  }
+}
+
+@media(max-width: 650px) {
+  .horizontalForm input {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .submitButtonHorizontal {
+    margin-top: 5%;
+  }
+}
+
+@media(max-width: 568px) {
+  .pimg, .pimg1, .pimg2, .pimg3 {
+    background-attachment: scroll;
+  }
+
+  .navBar {
+    position: fixed;
+    height: 9%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .navBar ul {
+    top: -1%;
+    right: 1%;
+  }
+
+  .smallLogo {
+    height: 90%;
+    left: 2%;
+  }
+
+  .logoContainer {
+    left: 14%;
+  }
+
+  .pimg1 {
+    background-image: url('../pics/pistol.jpg');
+    background-position: 0% 90%;
+    min-height: 100%;
+    opacity: .88;
+    filter: contrast(102%) brightness(70%);
+  }
+
+  .svgLine1, .svgLine2, .svgLine3, .svgLine4, .svgLine5, .svgLine6 {
+    display: none;
+  }
+
+  .flowWithinImg {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 5%;
+  }
+
+  .pimg2, .pimg3, .pimg4 {
+    height: 40%;
+  }
+
+  .section {
+    padding: 15% 3% 15% 3%;
+  }
+
+  .danaBio {
+    left: 1%;
+    padding-left: 10%;
+  }
+
+  .danaBioImg {
+    left: 10%;
+    width: 80%;
+  }
+
+  .kristinaBio {
+    left: 1%;
+    padding-right: 10%;
+  }
+
+  .kristinaBioImg {
+    width: 80%;
+    left: 10%;
+  }
+
+  .benefitsContainer {
+    flex-wrap: wrap;
+  }
+
+  .kinstretchBenefits {
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #000;
+    padding: 5%;
+    width: 35%;
+    margin-bottom: 4%;
+    border-radius: 50%;
+  }
+
+  .emailContainer {
+    margin: 0 auto;
+    padding-bottom: 4%;
+    width: 90%;
+  }
+
+  .footer p {
+    padding-top: 5%;
+  }
+}
